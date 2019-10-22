@@ -2,3 +2,11 @@ A `Huey <https://github.com/coleifer/huey>`_ Storage implementation for SQLAlche
 
 An SQL implementation `already exists <https://github.com/coleifer/huey/blob/master/huey/contrib/sql_huey.py>`_
 for Peewee, but this one might be useful if a project is already using SQLAlchemy.
+
+Usage
+=====
+
+.. code-block:: python
+
+  from huey_sqlalchemy import SQLAlchemyHuey
+  huey = SQLAlchemyHuey(engine="postgresql://localhost")

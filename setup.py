@@ -14,11 +14,18 @@ setup(
     author_email='israel.halle@flare.systems',
     url='http://github.com/Flared/huey-sqlalchemy/',
     packages=find_packages(),
+    install_requires=[
+        'huey>=2.0',
+        'sqlalchemy>=1.2',
+    ],
+    tests_require=[
+        'mypy',
+    ],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: LGPL License',
+        'License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
@@ -28,5 +35,4 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
     ],
-    test_suite='runtests.runtests',
 )
