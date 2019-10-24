@@ -1,0 +1,6 @@
+huey==2.1.3
+mypy==0.740
+SQLAlchemy==1.3.10
+psycopg2==2.8.4
+-e git+git@github.com:Flared/huey-sqlalchemy.git@8c3731afcdef59ec53a3616e1f8afe7d89acd7fb#egg=huey_sqlalchemy
+-e git+https://github.com/Flared/sqlalchemy-stubs.git@6ee34d4726ca71e15905fa5f8b2620ad9e91fe23#egg=sqlalchemy_stubs
